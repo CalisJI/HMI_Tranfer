@@ -1,0 +1,586 @@
+﻿<UserControl x:Class="HMITranfer.View.OUTPUT_LIST_2_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HMITranfer.View"
+             mc:Ignorable="d" 
+             DataContext="{StaticResource OUTPUT_2_PAGE}"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Width="1366" Height="750">
+    <UserControl.Resources>
+        <Style x:Key="tbin" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="Width" Value="80"/>
+        </Style>
+        <Style x:Key="tbinname" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="Width" Value="550"/>
+        </Style>
+        <Style x:Key="rec" TargetType="Rectangle">
+            <Setter Property="Width" Value="35"/>
+            <Setter Property="Height" Value="35"/>
+        </Style>
+        <Style x:Key="tbrec" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid >
+        <WrapPanel Orientation="Horizontal">
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y40"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Lift_Cyl_TrayZ1_Up"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y41"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Hold_Cyl_TrayZ1_Clamp"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y42"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Behind_Cyl_TrayZ1_Down"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y43"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Sepra_Cyl_TrayZ2_Down"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y44"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Lift_Cyl_TrayZ2_Up"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y45"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Hold_Cyl_TrayZ2_Clamp"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y46"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Behind_Cyl_TrayZ2_Down"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y47"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y50"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="SOL_Cyl_UnloadY_Backward"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y51"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Comebacktray_Buzzer"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y52"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Comback_Conveyor_On"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y53"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y54"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Start Wingding X"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y55"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Permit_RBY_Pickup"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y56"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="WDY_Ready_LI-LO"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y57"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Start Wingding Y"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y60"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Permit_RBZ1_Pickup"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y61"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Permit_RBZ1_Pickup"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y62"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y63"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y64"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y65"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y66"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock
+                Style="{StaticResource tbin}"
+                Text="Y67"/>
+                <Separator Width="2"/>
+                <TextBlock
+                Style="{StaticResource tbinname}"
+                Text="Spare"/>
+                <Separator Width="2"/>
+                <Grid>
+                    <Rectangle Style="{StaticResource rec}">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Gray"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBlock
+                    Style="{StaticResource tbrec}"
+                    Text="Off"/>
+                </Grid>
+
+            </StackPanel>
+
+
+
+
+        </WrapPanel>
+
+        <StackPanel
+            VerticalAlignment="Bottom"
+            Margin="0,0,0,20"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding OUTPUT_LIST_1PageCommand}"
+                 materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                
+                Height="50"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        Foreground="Yellow"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="PRE PAGE"/>
+                </Button.Content>
+            </Button>
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding INPUT_LIST_1_PageCommand}"
+                 materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                Margin="50,0,0,0"
+                Height="50"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        Foreground="Yellow"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="NEXT PAGE"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,273 @@
+﻿<UserControl x:Class="HMITranfer.View.MANU_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HMITranfer.View"
+             mc:Ignorable="d" 
+             DataContext="{StaticResource MANU_PAGE}"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Width="1366" Height="750">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+           
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Height="70"
+                
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        Foreground="Yellow"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="MANU X ST"/>
+                </Button.Content>
+            </Button>
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding MANUAL_Y_ST_PageCommand}"
+                Margin="50,0,0,0"
+                Height="70"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="MANU Y ST"/>
+                </Button.Content>
+            </Button>
+
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding MANUAL_Z1_ST_PageCommand}"
+                Margin="50,0,0,0"
+                Height="70"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="MANU Z1 ST"/>
+                </Button.Content>
+            </Button>
+
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding MANUAL_Z2_ST_PageCommand}"
+                Margin="50,0,0,0"
+                Height="70"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="MANU Z2 ST"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+            <GroupBox Margin="0,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock
+                        FontWeight="Bold"
+                        Text="BUFFER CYL X ST"/>
+                </GroupBox.Header>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button
+                        Command="{Binding BUFFER_CYL_X_DOWN_COMMAND}"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowBottomBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                        Command="{Binding BUFFER_CYL_X_UP_COMMAND}"
+                        Margin="40,0,0,0"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowUpBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </GroupBox >
+            <Button
+                DataContext="{StaticResource MainScreen}"
+                Command="{Binding MANU_AUTOXST_Command}"
+                Margin="40,0,40,0"
+                Height="70"
+                Width="200">
+                <Button.Content>
+                    <TextBlock
+                        Foreground="Yellow"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Text="{Binding MANU_X_ST_NAME}"/>
+                </Button.Content>
+            </Button>
+            <GroupBox Margin="0,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock
+                        FontWeight="Bold"
+                        Text="LIFT CYL X ST"/>
+                </GroupBox.Header>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button
+                        Command="{Binding LIFTCYL_X_DOWN_COMMMAND}"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowBottomBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                        Command="{Binding LIFTCYL_X_UP_COMMAND}"
+                        Margin="40,0,0,0"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowUpBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
+            <GroupBox Margin="0,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock
+                        FontWeight="Bold"
+                        Text="SEPARATE CYL X ST"/>
+                </GroupBox.Header>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button
+                        Command="{Binding SEPARATED_CYL_X_DOWN_COMMAND}"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowBottomBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                        Command="{Binding SEPARATED_CYL_X_UP_cOMMAND}"
+                        Margin="40,0,0,0"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowUpBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </GroupBox>
+            
+            <GroupBox Margin="280,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock
+                        FontWeight="Bold"
+                        Text="BEHIND CYL X ST"/>
+                </GroupBox.Header>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button
+                        Command="{Binding BEHIND_CYL_X_DOWN_COMMAND}"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowBottomBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                        Command="{Binding BEHIND_CYL_X_UP_COMMAND}"
+                        Margin="40,0,0,0"
+                        Height="100"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Width="120">
+                        <Button.Content>
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Kind="ArrowUpBold"
+                                Height="100" 
+                                Width="100"/>
+
+
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

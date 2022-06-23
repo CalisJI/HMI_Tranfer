@@ -1,0 +1,55 @@
+﻿<Application x:Class="HMITranfer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HMITranfer"
+             xmlns:viewmodel="clr-namespace:HMITranfer.ViewModel"
+             xmlns:view="clr-namespace:HMITranfer.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MainResource/MainResource.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewmodel:MainScreen_ViewModel}">
+                <view:MainScreen_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:MANU_ViewModel}">
+                <view:MANU_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:ALARM_ViewModel}">
+                <view:ALARM_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:AUTO_ViewModel}">
+                <view:AUTO_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:INPUT_LIST_1_ViewModel}">
+                <view:INPUT_LIST_1/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:INPUT_LIST2_ViewModel}">
+                <view:INPUR_LIST2_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:INPUT_LIST_3_ViewModel}">
+                <view:INPUT_LIST3_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:MANUAL_Y_ST_ViewModel}">
+                <view:MANUAL_Y_ST_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:MANUAL_Z1_ST_ViewModel}">
+                <view:MANUAL_Z1_ST_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:MANUAL_Z2_ST_ViewModel}">
+                <view:MANU_Z2_ST_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:OUTPUT_1_ViewModel}">
+                <view:OUTPUT_1_View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodel:OUTPUT_LIST_2_ViewModel}">
+                <view:OUTPUT_LIST_2_View/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

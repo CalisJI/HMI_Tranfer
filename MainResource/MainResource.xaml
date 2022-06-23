@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:HMITranfer.ViewModel">
+    <viewmodel:MainScreen_ViewModel x:Key="MainScreen"/>
+    <viewmodel:MANU_ViewModel x:Key="MANU_PAGE"/>
+    <viewmodel:ALARM_ViewModel x:Key="ALARM_PAGE"/>
+    <viewmodel:AUTO_ViewModel x:Key="AUTO_PAGE"/>
+    <viewmodel:INPUT_LIST_1_ViewModel x:Key="INPUT_LIST_1_PAGE"/>
+    <viewmodel:INPUT_LIST2_ViewModel x:Key="INPUT_LIST_2_PAGE"/>
+    <viewmodel:INPUT_LIST_3_ViewModel x:Key="INPUT_LIST_3_PAGE"/>
+    <viewmodel:MANUAL_Y_ST_ViewModel x:Key="MANUAL_Y_PAGE"/>
+    <viewmodel:MANUAL_Z1_ST_ViewModel x:Key="MANUAL_Z1_PAGE"/>
+    <viewmodel:MANUAL_Z2_ST_ViewModel x:Key="MANUAL_Z2_PAGE"/>
+    <viewmodel:OUTPUT_1_ViewModel x:Key="OUTPUT_1_PAGE"/>
+    <viewmodel:OUTPUT_LIST_2_ViewModel x:Key="OUTPUT_2_PAGE"/>
+</ResourceDictionary>
